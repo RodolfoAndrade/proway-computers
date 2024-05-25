@@ -24,6 +24,10 @@ li p, label {
     /* border-style: dashed; */
 }
 
+p {
+    font-size: large;
+}
+
 img {
     width: 100px;
     height: 100px;
