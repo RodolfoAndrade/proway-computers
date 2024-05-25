@@ -1,6 +1,6 @@
 .product-list {
     padding: 40px 0;
-    width: fit-content;    
+    width: fit-content;
     display: flex;
     gap: 20px;
     flex-flow: row wrap;  
@@ -12,14 +12,14 @@
     box-sizing: border-box;
     padding: 10px;
     border-radius: 4px;
-    flex: 0 1 270px;
+    /* flex: 0 1 300px; */
     height: 450px;
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;       
 }
 
 .product-list__card:hover {
-    outline: 1px solid var(--blue);
+    /* outline: 1px solid var(--blue); */
     transform: scale(1.1, 1.1);
     cursor: pointer;
 }
@@ -62,6 +62,7 @@
     color: white;
     font-size: 20px;
     padding: 6px 12px;
+    border-radius: 4px;
 }
 
 .product-item__buy-button:hover {

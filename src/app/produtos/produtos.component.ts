@@ -17,16 +17,17 @@ export class ProdutosComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const produtos = this.produtosService.getAll();
+    const all_produtos = this.produtosService.getAll();
     this.route.queryParamMap.subscribe(params => {
       const descricao = params.get("descricao")?.toLowerCase();
 
       if(descricao){
-        this.produtos = produtos.filter(produto => produto.descricao.toLowerCase().includes(descricao));
+        this.produtos = all_produtos.filter(produto => produto.descricao.toLowerCase().includes(descricao));
+        console.log(all_produtos);
+        console.log(this.produtos);
         return;
       }
-
-      this.produtos = produtos;
+      this.produtos = all_produtos;
     });
   }
 

@@ -7,13 +7,13 @@
         <h3 class="product__price">{{ produto?.preco | currency: "BRL" }}</h3>
         <p></p>
         <label>
-            Quantidade:
+            Quantity:
             <input type="number" [(ngModel)]="quantidade" min="1">
-            unidade(s)
+            unit(s)
         </label>
         <p class="product__availability">
-            {{ produto?.quantidadeEstoque }} unidade(s) em estoque
+            {{ produto?.quantidadeEstoque }} unit(s) in store
         </p>
-        <button (click)="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+        <button (click)="adicionarAoCarrinho()">Add to the cart</button>
     </div>
 </section>

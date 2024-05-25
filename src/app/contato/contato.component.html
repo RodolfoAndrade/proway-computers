@@ -1,9 +1,9 @@
-<h2 class="contact__title">Entre em contato</h2>
 <section class="contact__container">
     <form class="contact-form" [formGroup]="formContato" (ngSubmit)="enviarFormulario()">
+        <h2 class="contact__title">Contact us</h2>
         <input 
             type="text" 
-            placeholder="Digite o seu nome"
+            placeholder="Type your name"
             formControlName="nome"
             [class.valid]="formContato.controls['nome'].valid"
             [class.invalid]="formContato.controls['nome'].invalid && 
@@ -20,7 +20,7 @@
         </div>
         <input 
             type="assunto" 
-            placeholder="Digite o assunto"
+            placeholder="Type the subject"
             formControlName="assunto"
             [class.valid]="formContato.controls['assunto'].valid"
             [class.invalid]="formContato.controls['assunto'].invalid && 
@@ -54,7 +54,7 @@
         </div>
         <input 
             type="email" 
-            placeholder="Digite o seu e-mail"
+            placeholder="Type your e-mail"
             formControlName="email"
             [class.valid]="formContato.controls['email'].valid"
             [class.invalid]="formContato.controls['email'].invalid && 
@@ -71,7 +71,7 @@
         </div>
         <textarea 
             maxlength="300" 
-            placeholder="Digite a sua mensagem..."
+            placeholder="Type your message..."
             rows="4"
             formControlName="mensagem"
             [class.valid]="formContato.controls['mensagem'].valid"
@@ -89,8 +89,8 @@
         </div>
         <button [disabled]="formContato.invalid" type="submit">Enviar</button>
     </form>
-    <address>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.575090994095!2d-49.07288232456033!3d-26.91697717664461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df18c3b4a71d65%3A0xa5ec9dd8406a6a7!2sProWay!5e0!3m2!1sde!2sbr!4v1712497169160!5m2!1sde!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>R. 7 de Setembro, 1600 - 14º andar - Centro, Blumenau - SC, 89010-204</p>
-    </address>
+    <!-- <address> -->
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.575090994095!2d-49.07288232456033!3d-26.91697717664461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df18c3b4a71d65%3A0xa5ec9dd8406a6a7!2sProWay!5e0!3m2!1sde!2sbr!4v1712497169160!5m2!1sde!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <!-- <p>R. 7 de Setembro, 1600 - 14º andar - Centro, Blumenau - SC, 89010-204</p> -->
+    <!-- </address> -->
 </section>

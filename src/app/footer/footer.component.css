@@ -32,6 +32,10 @@
     text-align: justify;
 }
 
+.footer__about-text b {
+    font-weight: bold;
+}
+
 
 .footer i {
     color: var(--orange);

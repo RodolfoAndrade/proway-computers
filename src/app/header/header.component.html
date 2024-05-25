@@ -1,19 +1,20 @@
 <header class="main-header">
+    <!-- <img id="main-header__img" src="./assets/icon.jpg" width="100" height="100"> -->
     <h1 class="main-header__title">
-        <span class="main-header__title--blue">ProWay</span><span class="main-header__title--orange">Computers</span>
+        <a href="/"><span class="main-header__title--blue">Compu</span><span class="main-header__title--orange">Mart</span></a>
     </h1>
     <div class="container-menu">
         <nav class="main-header__menu">
             <ul>
-                <li><a href="/produtos">Produtos</a></li>
-                <li><a href="/carrinho"><i class="fa-solid fa-cart-shopping"></i>Carrinho<span class="badge-carrinho">{{ this.carrinhoService.obtemCarrinho().length }}</span></a></li>
-                <li><a href="/contato">Contato</a></li>
-                <li><a><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="/produtos">Products</a></li>
+                <li><a href="/carrinho"><i class="fa-solid fa-cart-shopping"></i>Cart<span class="badge-carrinho">{{ this.carrinhoService.obtemCarrinho().length }}</span></a></li>
+                <li><a href="/contato">Contact</a></li>
+                <li><a href="/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="/"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <app-barra-pesquisa></app-barra-pesquisa>
             </ul>
         </nav>
-        <app-barra-pesquisa></app-barra-pesquisa>
     </div>
 </header>

@@ -34,25 +34,15 @@
     font-size: 12px;
 }
 
-label {
+label, p {
     margin: 20px 0;
     display: block;
+    font-size: large;
 }
 
 input {
     width: 30px;
     padding: 5px;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 button {
@@ -64,6 +54,7 @@ button {
     transition: .3s all;
     margin: 20px 0;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 button:hover {
